@@ -8,6 +8,9 @@ Route::get('/', function () {
 
 Route::view('/about','about');
 
+Route::get('/products/{category?}',function(string $category=null){
+    return "Product for category= $category";
+});
 
 /*
 Route::get('/about', function () {

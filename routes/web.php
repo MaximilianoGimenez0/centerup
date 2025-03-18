@@ -24,7 +24,7 @@ Route::fallback(function(){
 });
 
 Route::get('/sum/{first_num?}/{second_num?}',function(float $first_num = null,float $second_num = null){
-    return $first_num + $second_num;
+    return json_encode(['resultado'=>$first_num+$second_num]);
 })->whereNumber(['first_num','second_num']);
 
 

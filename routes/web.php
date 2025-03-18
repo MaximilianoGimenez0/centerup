@@ -1,5 +1,5 @@
 <?php
-
+//V2
 use App\Http\Controllers\articulo_Controller;
 use Illuminate\Support\Facades\Route;
 
